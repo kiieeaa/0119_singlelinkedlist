@@ -155,7 +155,7 @@ int main()
             mhs.traverse();
             break;
         case '4':
-        {
+            {
             if (mhs.listEmpty())
             {
                 cout << "\nList Kosong\n";
@@ -168,9 +168,24 @@ int main()
             if (mhs.search(nim, previous, current) == false)
                 cout << "\nData tidak ditemukan\n";
             else
-                cout << "\nData dengan no mahasiswa " << nim << " ditemukan\n";
+                cout << "\nData ditemukan\n";
+                cout << "NIM Mahasiswa: " << current->noMhs << endl;
             break;
+            }
+        case '5':
+        break;
+        default:
+            cout << "\nPilihan salah.\n";  
+    
         }
+    } while (ch != '5');
+    return 0;
+        
+    
+};
+
+            
+            
 
             
     
