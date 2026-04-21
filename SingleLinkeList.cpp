@@ -99,6 +99,17 @@ public:
         {
             cout << "\nList Kosong\n";
         }
+                else
+        {
+            cout << "\nData dalam list: \n";
+            Node *currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << " ";
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
 
     }
 };
